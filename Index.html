@@ -8,42 +8,51 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <!--SIDE BAR-->
-  <div class="sidebar" >
-    <a href="#" class="logo">
-      <i class='bx bx-code-alt'></i>
-      <div class="nombre-logo"><span>Elio</span>Dev</div>
-    </a>
-    <ul class="side-menu">
-      <li class="active"><a href="#"><i class='bx bx-home'></i>Inicio</a></li>
-      <li><a href="#"><i class='bx bx-briefcase' ></i>Proyectos</a></li>
-      <li><a href="#"><i class='bx bx-user'></i>Sobre mí</a></li>
-      <li><a href="#"><i class='bx bx-envelope'></i>Contactame</a></li>
-    </ul>
-  </div>
-   <!--END SIDEBAR-->
-  <div class="content">
-    <nav >
-      <a href="CV-ElioMolas.pdf" class="curriculum" download="Cv-ElioMolas">
-        <i class='bx bx-cloud-download' ></i>
-        <span>Descargar CV</span>
+  <!-- NavBar -->
+  <header>
+  <nav>
+    <div class="contenedor-nav">
+      <a href="#" class="logo">
+        <div class="nombre-logo"><span>Elio</span>Dev</div>
       </a>
-      <input type="checkbox" id="theme-toggle" hidden>
-      <label for="theme-toggle" class="theme-toggle"></label>
-    </nav>
-  <main>
-    <section class="Inicio">
-      <div class="presentacion">
-        <h1>Elio Molas</h1>
-        <h2>Desarrollador <span>Web Full Stack</span></h2>
-        <h3></h3>
+      <div class="">
+        <i class='bx bx-sun'></i>
+        <i class='bx bx-moon'></i>
       </div>
-      <div class="imagen">
+    </div>
+  </nav>
+  <!-- Fin NavBar -->
+</header>
+  <main class="contenedor-principal">
+    <section class="perfil">
+      <div class="descripcion-usuario">
+        <h1>Elio Molas</h1>
+        <div>
+          <h3>Desarrollador Web Full Stack 💻</h3>
+          <h3>Desarrollador Java ☕</h3>
+          <h3>Analista de Datos 📊</h3>
+        </div>
+      </div>
+      <div class="img-perfil">
         <img src="ElioMolas.png" alt="yo">
+        <div class="redes">
+          <a href=""><i class='bx bxl-github red' ></i></a>
+          <a href=""><i class='bx bxl-linkedin red' ></i></a>
+          <a href=""><i class='bx bxl-instagram red' ></i></a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="menu-contenedor">
+        <ul class="menu">
+          <li><a class="active" href="#">Sobre mi</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="#">Contactame</a></li>
+        </ul>
       </div>
     </section>
   </main>
-</div>
+
   <script src="index.js"></script>
 </body>
 </html>
