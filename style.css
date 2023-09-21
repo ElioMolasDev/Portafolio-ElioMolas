@@ -250,6 +250,21 @@ body{
   max-height: calc(100vh - 56px);
 }
 
+.Inicio{
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.Inicio img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+
 
 @media screen and (max-width: 765px) {
   .sidebar{
