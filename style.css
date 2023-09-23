@@ -25,6 +25,13 @@ body{
   overflow-x: hidden;
 }
 
+body.dark{
+  --claro: #060608;
+  --gris: #25252c;
+  --oscuro: rgb(255, 255,255);
+  --surface-alpha: hsl(var(--gray-10-hsl) / 65%)
+}
+
 .bx{
   font-size: 1.7rem;
   color: var(--oscuro);
@@ -62,6 +69,7 @@ h3{
 
 p{
   font-size: 0.9rem;
+  color: var(--oscuro);
 }
 
 section{
@@ -103,7 +111,38 @@ nav{
   color: var(--oscuro);
 }
 
+.modo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.theme-toggle{
+  display: block;
+  min-width: 50px;
+  height: 25px;
+  background: var(--gris);
+  cursor: pointer;
+  position: relative;
+  border-radius: 25px;
+}
+
+.theme-toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: calc(25px - 4px);
+  background: var(--primario);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:checked+.theme-toggle::before{
+  left: calc(100% - (25px - 4px) - 2px);
+}
 
 
 /* FIN navbar */
@@ -180,7 +219,7 @@ nav{
 
 .bxl-github:hover{
   background: var(--oscuro);
-  color: white;
+  color: var(--claro);
 }
 
 /* Final Del Perfil */
