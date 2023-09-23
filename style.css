@@ -185,6 +185,22 @@ nav{
 
 /* Final Del Perfil */
 
+/* Stack tecnologias */
+
+.contenedor-tecnologias{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr) );
+    gap: 10px;
+}
+
+.contenedor-tecnologias img{
+  width: 40px;
+  height: auto;
+}
+
+/* Fin Stack */
+
+/* MENU */
 .menu-contenedor .menu{
   display: flex;
   align-items: center;
@@ -250,6 +266,9 @@ nav{
   justify-content: space-between;
 }
 
+/* FIN MENU */
+
+/* Sobre MI */
 .posteo{
   padding-left: 20px;
   border-left: 2px solid var(--primario);
@@ -263,4 +282,6 @@ nav{
   width: 100%;
   height: auto;
 }
+
+
 
