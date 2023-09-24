@@ -80,6 +80,10 @@ article{
   margin-top: 30px;
 }
 
+article.ocultar{
+  display: none;
+}
+
 
 /* Estilo Nav */
 nav{
@@ -299,15 +303,18 @@ nav{
   transform: scale(2);
 }
 
+.menu li a.active{
+  border-bottom: 2px solid var(--primario);
+}
+/* FIN MENU */
+
+/* Sobre MI */
 .contenedor-posteos{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* FIN MENU */
-
-/* Sobre MI */
 .posteo{
   padding-left: 20px;
   border-left: 2px solid var(--primario);
@@ -321,6 +328,154 @@ nav{
   width: 100%;
   height: auto;
 }
+/*  */
+
+
+.img-proyecto{
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
 
 
 
+/* FORMUULARIO */
+
+.descripcion-contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bx-cloud-download{
+  color: var(--claro);
+}
+
+.CV{
+  width: 200px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 36px;
+  background: var(--primario);
+  color: var(--claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  font-weight: 500;
+}
+
+.contact-form {
+  padding: 1rem;
+  max-width: 800px;
+}
+
+.contact-form > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 0.85rem;
+  background-color: var(--claro);
+  color: var(--oscuro);
+}
+
+.contact-form input {
+  border: 0;
+  padding-left: 0;
+  border-bottom: thin solid var(--primario);
+}
+
+.contact-form textarea {
+  border: thin solid var(--primario);
+  resize: none;
+}
+
+.contact-form input[type="submit"] {
+  margin-top: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.contact-form input[type="submit"]:hover {
+  opacity: 0.75;
+}
+
+.contact-form *::placeholder {
+  color: var(--oscuro);
+}
+
+.contact-form-response {
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: var(--claro);
+}
+.contact-form-response svg {
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.modal#gracias:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--claro);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-close svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.modal[id|="trabajo"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.none {
+  display: none;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--claro);
+  background-color: var(--gris);
+}
