@@ -38,7 +38,7 @@ const nav = document.querySelector(".menu"),
     $form.addEventListener("submit", (e) => {
       e.preventDefault();
       $loader.classList.remove("none");
-      fetch("https://formsubmit.co/ajax/your@email.com", {
+      fetch("https://formsubmit.co/ajax/eliomolas.dev@gmail.com", {
         method: "POST",
         body: new FormData(e.target),
       })
